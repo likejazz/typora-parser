@@ -9,16 +9,16 @@
   "author": "pegasis",
   "repository": {
     "type": "git",
-    "url": "https://github.com/PegasisForever/typora-parse.git"
+    "url": "https://github.com/likejazz/typora-parse.git"
   },
-  "homepage": "https://github.com/PegasisForever/typora-parser#readme",
+  "homepage": "https://github.com/likejazz/typora-parser#readme",
   "license": "MIT",
   "scripts": {
     "watch": "tsc --watch",
     "build": "tsc",
     "dev": "node --enable-source-maps build/src/devmain.js",
     "typora-export": "node --enable-source-maps build/bin/typoraExport.js",
-    "prepublish": "rm -r ./build && tsc"
+    "prepublish": "mkdir -p build && rm -r ./build && tsc"
   },
   "devDependencies": {
     "@types/codemirror": "^5.60.5",

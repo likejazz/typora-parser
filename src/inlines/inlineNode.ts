@@ -771,8 +771,8 @@ namespace LinkNode {
 
 const nodePrecedenceGroups = [
   [RawHTMLNode, AutolinkNode, CodeSpanNode, EmojiNode],
-  [HighlightNode, SubScriptNode, SuperScriptNode],
-  [LinkNode.LinkNode, FootnoteNode],
+  [HighlightNode, SubScriptNode, SuperScriptNode, FootnoteNode],
+  [LinkNode.LinkNode],
   [EmphNode.EmphNode],
 ]
 

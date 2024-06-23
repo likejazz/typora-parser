@@ -4,3 +4,7 @@
 /test.html
 /.directory
 /extraHeadTags.txt
+.idea
+build/src
+node_modules
+package-lock.json
