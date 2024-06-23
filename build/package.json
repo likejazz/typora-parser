@@ -1,0 +1,37 @@
+{
+    "name": "typora-parser",
+    "version": "1.0.3",
+    "main": "./build/src/index.js",
+    "types": "./build/src/index.d.ts",
+    "bin": {
+        "typora-export": "./build/bin/typoraExport.js"
+    },
+    "author": "pegasis",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/likejazz/typora-parse.git"
+    },
+    "homepage": "https://github.com/likejazz/typora-parser#readme",
+    "license": "MIT",
+    "scripts": {
+        "watch": "tsc --watch",
+        "build": "tsc",
+        "dev": "node --enable-source-maps build/src/devmain.js",
+        "typora-export": "node --enable-source-maps build/bin/typoraExport.js",
+        "prepublish": "mkdir -p build && rm -r ./build && tsc"
+    },
+    "devDependencies": {
+        "@types/codemirror": "^5.60.5",
+        "@types/jsdom": "^16.2.13",
+        "@types/node": "^15.12.5",
+        "@typescript-eslint/eslint-plugin": "^4.31.2",
+        "@typescript-eslint/parser": "^4.31.2",
+        "eslint": "^7.32.0",
+        "typescript": "^4.3.5"
+    },
+    "dependencies": {
+        "commander": "^8.2.0",
+        "highlight.js": "^11.2.0",
+        "mathjax-full": "3"
+    }
+}
